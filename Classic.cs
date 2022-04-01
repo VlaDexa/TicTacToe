@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
+using System.Windows.Forms;
 
 namespace TicTacToe
 {
@@ -38,7 +38,8 @@ namespace TicTacToe
                 if (result == GameEnd.Toe)
                 {
                     MessageBox.Show("Ничья!");
-                } else
+                }
+                else
                 {
                     var ((startX, startY), (endX, endY)) = coordinates!.Value;
                     var startLine = (Field[startX, startY].Bounds.Location.X + Field[startX, startY].Width / 2, Field[startX, startY].Bounds.Location.Y + Field[startX, startY].Height / 2);
@@ -46,10 +47,10 @@ namespace TicTacToe
                     PaintCoordinates = (startLine, endLine);
                     InvokePaint(this, new PaintEventArgs(CreateGraphics(), DisplayRectangle));
                     var winner = result == GameEnd.Tic ? First : Second;
-                    winner.Text = (int.Parse(winner.Text)+1).ToString();
-                    MessageBox.Show($"Победили {(result == GameEnd.Tic ? "Крестики": "Нолики")}");
+                    winner.Text = (int.Parse(winner.Text) + 1).ToString();
+                    MessageBox.Show($"Победили {(result == GameEnd.Tic ? "Крестики" : "Нолики")}");
                 }
-                    Reset();
+                Reset();
                 return;
             }
             ++CurrentTurn;

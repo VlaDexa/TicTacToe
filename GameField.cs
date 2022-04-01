@@ -1,5 +1,5 @@
-﻿using System.Text;
-using System.IO;
+﻿using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace TicTacToe
@@ -41,13 +41,12 @@ namespace TicTacToe
         {
             if (TurnCount == Size * Size) return (GameEnd.Toe, null);
             --TurnCount;
-            for (uint y = 0; y < Size; ++y)
-                for (uint x = 0; x < Size; ++x)
+            for (uint x = 0; x < Size; ++x)
+                for (uint y = 0; y < Size; ++y)
                 {
                     var xFit = (x + Size - 1) < Size;
                     var yFit = (y + Size - 1) < Size;
                     var NegYFit = (y - Size + 1) < Size;
-                    var NegXFit = (x - Size + 1) < Size;
                     if (xFit && yFit)
                     {
                         var end = true;
@@ -110,7 +109,7 @@ namespace TicTacToe
 
         public StringBuilder PrepareForFile()
         {
-            var stringBuild = new StringBuilder((int)(7+Size*Size));
+            var stringBuild = new StringBuilder((int)(7 + Size * Size));
             stringBuild.Append($"{Size}\n");
             for (var x = 0; x < Size; ++x)
                 for (var y = 0; y < Size; ++y)
