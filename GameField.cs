@@ -44,15 +44,16 @@ namespace TicTacToe
             for (uint x = 0; x < Size; ++x)
                 for (uint y = 0; y < Size; ++y)
                 {
-                    var xFit = (x + Size - 1) < Size;
-                    var yFit = (y + Size - 1) < Size;
-                    var NegYFit = (y - Size + 1) < Size;
+                    if (Field[x, y] == CellState.None) continue;
+                    var xFit = (x + combo - 1) < Size;
+                    var yFit = (y + combo - 1) < Size;
+                    var NegYFit = (y - combo + 1) < Size;
                     if (xFit && yFit)
                     {
                         var end = true;
                         var first = Field[x, y];
                         for (var offset = 1; offset < combo; ++offset)
-                            if (Field[x + offset, y + offset] == CellState.None || first != Field[x + offset, y + offset])
+                            if (first != Field[x + offset, y + offset])
                             {
                                 end = false;
                                 break;
@@ -64,7 +65,7 @@ namespace TicTacToe
                         var end = true;
                         var first = Field[x, y];
                         for (var offset = 1; offset < combo; ++offset)
-                            if (Field[x + offset, y] == CellState.None || first != Field[x + offset, y])
+                            if (first != Field[x + offset, y])
                             {
                                 end = false;
                                 break;
@@ -76,7 +77,7 @@ namespace TicTacToe
                         var end = true;
                         var first = Field[x, y];
                         for (var offset = 1; offset < combo; ++offset)
-                            if (Field[x, y + offset] == CellState.None || first != Field[x, y + offset])
+                            if (first != Field[x, y + offset])
                             {
                                 end = false;
                                 break;
