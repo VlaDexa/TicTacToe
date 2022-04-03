@@ -30,7 +30,7 @@ namespace TicTacToe
             };
         }
 
-        private void ProcessButtonClick(object sender, System.EventArgs e)
+        private void ProcessButtonClick(object sender, EventArgs e)
         {
             if (sender is not Button button) return;
             for (uint x = 0; x < FieldSize; ++x)
@@ -56,8 +56,9 @@ namespace TicTacToe
                     var endLine = (Field[endX, endY].Bounds.Location.X + Field[endX, endY].Width / 2, Field[endX, endY].Bounds.Location.Y + Field[endX, endY].Height / 2);
                     PaintCoordinates = (startLine, endLine);
                     InvokePaint(this, new PaintEventArgs(CreateGraphics(), DisplayRectangle));
+                    PaintCoordinates = null;
                     var winner = result == GameEnd.Tic ? First : Second;
-                    winner.Text = (int.Parse(winner.Text) + 1).ToString();
+                    winner.Text = (uint.Parse(winner.Text) + 1).ToString();
                     MessageBox.Show($"Победили {(result == GameEnd.Tic ? "Крестики" : "Нолики")}");
                 }
                 Reset();
@@ -86,7 +87,7 @@ namespace TicTacToe
             Reset();
         }
 
-        private void Classic_Paint(object sender, PaintEventArgs e)
+        private void TenByTen_Paint(object sender, PaintEventArgs e)
         {
             e.Graphics.Clear(BackColor);
             if (PaintCoordinates is null) return;
@@ -95,7 +96,6 @@ namespace TicTacToe
             var startPoint = new Point(startX, startY);
             var endPoint = new Point(endX, endY);
             e.Graphics.DrawLine(pen, startPoint, endPoint);
-            PaintCoordinates = null;
         }
 
         private void ResetButton_Click(object sender, EventArgs e)
