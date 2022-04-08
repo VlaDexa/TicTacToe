@@ -36,17 +36,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(326, 31);
+            this.label1.Location = new System.Drawing.Point(228, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 25);
+            this.label1.Size = new System.Drawing.Size(106, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Крестики-Нолики";
             // 
             // ClassicShower
             // 
-            this.ClassicShower.Location = new System.Drawing.Point(12, 100);
+            this.ClassicShower.Location = new System.Drawing.Point(8, 60);
+            this.ClassicShower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ClassicShower.Name = "ClassicShower";
-            this.ClassicShower.Size = new System.Drawing.Size(343, 338);
+            this.ClassicShower.Size = new System.Drawing.Size(240, 203);
             this.ClassicShower.TabIndex = 1;
             this.ClassicShower.Text = "Обычный";
             this.ClassicShower.UseVisualStyleBackColor = true;
@@ -54,9 +56,10 @@
             // 
             // ComplexShower
             // 
-            this.ComplexShower.Location = new System.Drawing.Point(449, 100);
+            this.ComplexShower.Location = new System.Drawing.Point(314, 60);
+            this.ComplexShower.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ComplexShower.Name = "ComplexShower";
-            this.ComplexShower.Size = new System.Drawing.Size(339, 338);
+            this.ComplexShower.Size = new System.Drawing.Size(237, 203);
             this.ComplexShower.TabIndex = 2;
             this.ComplexShower.Text = "10 x 10";
             this.ComplexShower.UseVisualStyleBackColor = true;
@@ -64,14 +67,15 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(560, 270);
             this.Controls.Add(this.ComplexShower);
             this.Controls.Add(this.ClassicShower);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Menu";
-            this.Text = "Form1";
+            this.Text = "Menu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

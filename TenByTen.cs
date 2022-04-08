@@ -12,7 +12,7 @@ namespace TicTacToe
         private uint CurrentTurn = 0;
         private readonly Button[,] Field;
         private GameField GameField = new(FieldSize);
-        private ((int, int), (int, int))? PaintCoordinates = null;
+
         public TenByTen()
         {
             InitializeComponent();
@@ -54,9 +54,16 @@ namespace TicTacToe
                     var ((startX, startY), (endX, endY)) = coordinates!.Value;
                     var startLine = (Field[startX, startY].Bounds.Location.X + Field[startX, startY].Width / 2, Field[startX, startY].Bounds.Location.Y + Field[startX, startY].Height / 2);
                     var endLine = (Field[endX, endY].Bounds.Location.X + Field[endX, endY].Width / 2, Field[endX, endY].Bounds.Location.Y + Field[endX, endY].Height / 2);
-                    PaintCoordinates = (startLine, endLine);
-                    InvokePaint(this, new PaintEventArgs(CreateGraphics(), DisplayRectangle));
-                    PaintCoordinates = null;
+                    var (startXNew, startYNew) = startLine;
+                    var (endXNew, endYNew) = endLine;
+                    var fline = new Fline
+                    {
+                        Location = new Point(startXNew, startYNew),
+                        Height = endYNew - startYNew,
+                        Width = endXNew - startXNew,
+                    };
+                    Controls.Add(fline);
+                    fline.BringToFront();
                     var winner = result == GameEnd.Tic ? First : Second;
                     winner.Text = (uint.Parse(winner.Text) + 1).ToString();
                     MessageBox.Show($"Победили {(result == GameEnd.Tic ? "Крестики" : "Нолики")}");
@@ -76,8 +83,13 @@ namespace TicTacToe
                     Field[x, y].Enabled = true;
                     Field[x, y].Text = "";
                 }
+            for (var i = 0; i < Controls.Count; ++i)
+                if (Controls[i] is Fline)
+                {
+                    Controls.RemoveAt(i);
+                    break;
+                }
             CurrentTurn = 0;
-            PaintCoordinates = null;
             GameField.Reset();
             Invalidate();
         }
@@ -85,17 +97,6 @@ namespace TicTacToe
         private void NewGame_Click(object sender, EventArgs e)
         {
             Reset();
-        }
-
-        private void TenByTen_Paint(object sender, PaintEventArgs e)
-        {
-            e.Graphics.Clear(BackColor);
-            if (PaintCoordinates is null) return;
-            Pen pen = new(Color.Red, 3);
-            var ((startX, startY), (endX, endY)) = PaintCoordinates!.Value;
-            var startPoint = new Point(startX, startY);
-            var endPoint = new Point(endX, endY);
-            e.Graphics.DrawLine(pen, startPoint, endPoint);
         }
 
         private void ResetButton_Click(object sender, EventArgs e)

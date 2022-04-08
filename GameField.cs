@@ -123,7 +123,7 @@ namespace TicTacToe
             Size = uint.Parse(file.ReadLine()!);
             Field = new CellState[Size, Size];
             var x = 0;
-            var y = 0;
+            uint y = 0;
             uint size = 0;
             foreach (var character in file.ReadLine()!)
             {
@@ -143,8 +143,8 @@ namespace TicTacToe
                 ++y;
                 if (y >= Size)
                 {
-                    y = (int)(y % Size);
-                    x += 1;
+                    y %= Size;
+                    ++x;
                 }
                 TurnCount = size;
             }
