@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.Name = "Fline";
-            this.Resize += new System.EventHandler(this.UserControl1_Resize);
+            this.Resize += new System.EventHandler(this.Fline_Resize);
             this.ResumeLayout(false);
 
         }

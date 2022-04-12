@@ -44,7 +44,7 @@ namespace TicTacToe
             for (uint x = 0; x < Size; ++x)
                 for (uint y = 0; y < Size; ++y)
                 {
-                    if (Field[x, y] == CellState.None) continue;
+                    if (Field[x, y] is CellState.None) continue;
                     var xFit = (x + combo - 1) < Size;
                     var yFit = (y + combo - 1) < Size;
                     var NegYFit = (y - combo + 1) < Size;
@@ -89,7 +89,7 @@ namespace TicTacToe
                         var end = true;
                         var first = Field[x, y];
                         for (var offset = 1; offset < combo; ++offset)
-                            if (Field[x + offset, y - offset] == CellState.None || first != Field[x + offset, y - offset])
+                            if (first != Field[x + offset, y - offset])
                             {
                                 end = false;
                                 break;

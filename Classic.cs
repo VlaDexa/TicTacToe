@@ -1,126 +1,31 @@
-﻿using System;
-using System.Drawing;
-using System.IO;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace TicTacToe
 {
-    public partial class Classic : Form
+    public partial class Classic : TicTacToeField
     {
         const int FieldSize = 3;
         const int Combo = 3;
-        private uint CurrentTurn = 0;
-        private readonly Button[,] Field;
-        private GameField GameField = new(FieldSize);
+        readonly Button[,] Field;
+
+        protected override uint AbstractCombo => Combo;
+
+        protected override uint AbstractFieldSize => FieldSize;
+
+        protected override Button[,] AbstractField => Field;
+
+        protected override Label AbstractFirst => First;
+
+        protected override Label AbstractSecond => Second;
+
+        protected override OpenFileDialog AbstractFileLoader => FileLoader;
+
+        protected override SaveFileDialog AbstractFileSaver => FileSaver;
 
         public Classic()
         {
             InitializeComponent();
             Field = new Button[FieldSize, FieldSize] { { a1, a2, a3 }, { b1, b2, b3 }, { c1, c2, c3 } };
-        }
-
-        private void ProcessButtonClick(object sender, EventArgs e)
-        {
-            if (sender is not Button button) return;
-            for (uint x = 0; x < FieldSize; ++x)
-                for (uint y = 0; y < FieldSize; ++y)
-                    if (button == Field[x, y])
-                    {
-                        GameField.Place(x, y);
-                        break;
-                    }
-            button.Text = CurrentTurn % 2 == 0 ? "X" : "O";
-            button.Enabled = false;
-            var (end, coordinates) = GameField.Check(Combo);
-            if (end is GameEnd result)
-            {
-                if (result == GameEnd.Toe)
-                {
-                    MessageBox.Show("Ничья!");
-                }
-                else
-                {
-                    var ((startX, startY), (endX, endY)) = coordinates!.Value;
-                    var startLine = (Field[startX, startY].Bounds.Location.X + Field[startX, startY].Width / 2, Field[startX, startY].Bounds.Location.Y + Field[startX, startY].Height / 2);
-                    var endLine = (Field[endX, endY].Bounds.Location.X + Field[endX, endY].Width / 2, Field[endX, endY].Bounds.Location.Y + Field[endX, endY].Height / 2);
-                    var (startXNew, startYNew) = startLine;
-                    var (endXNew, endYNew) = endLine;
-                    var fline = new Fline
-                    {
-                        Location = new Point(startXNew, startYNew),
-                        Height = endYNew - startYNew,
-                        Width = endXNew - startXNew,
-                    };
-                    Controls.Add(fline);
-                    fline.BringToFront();
-                    var winner = result == GameEnd.Tic ? First : Second;
-                    winner.Text = (int.Parse(winner.Text) + 1).ToString();
-                    MessageBox.Show($"Победили {(result == GameEnd.Tic ? "Крестики" : "Нолики")}");
-                }
-                Reset();
-                return;
-            }
-            ++CurrentTurn;
-        }
-
-        private void Reset()
-        {
-            for (var x = 0; x < FieldSize; ++x)
-                for (var y = 0; y < FieldSize; ++y)
-                {
-                    Field[x, y].Enabled = true;
-                    Field[x, y].Text = "";
-                }
-            for (var i = 0; i < Controls.Count; ++i)
-                if (Controls[i] is Fline)
-                {
-                    Controls.RemoveAt(i);
-                    break;
-                }
-            CurrentTurn = 0;
-            GameField.Reset();
-            Invalidate();
-        }
-
-        private void NewGame_Click(object sender, EventArgs e)
-        {
-            Reset();
-        }
-
-        private void ResetButton_Click(object sender, EventArgs e)
-        {
-            Second.Text = First.Text = "0";
-            Reset();
-        }
-
-        private void SaveButton_Click(object sender, EventArgs e)
-        {
-            FileSaver.ShowDialog();
-        }
-
-        private void FileSaver_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            var filename = FileSaver.FileName;
-            var stringBuild = GameField.PrepareForFile();
-            stringBuild.Insert(0, $"{First.Text}\n{Second.Text}\n");
-            using StreamWriter outputFile = new(filename);
-            outputFile.WriteLine(stringBuild);
-        }
-
-        private void Load_Click(object sender, EventArgs e)
-        {
-            FileLoader.ShowDialog();
-        }
-
-        private void FileLoader_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            Reset();
-            var filename = FileLoader.FileName;
-            using StreamReader inputFile = new(filename);
-            First.Text = inputFile.ReadLine()!;
-            Second.Text = inputFile.ReadLine()!;
-            GameField = new GameField(inputFile, Field);
-            CurrentTurn = GameField.TurnCount;
         }
     }
 }

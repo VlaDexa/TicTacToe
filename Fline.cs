@@ -2,30 +2,40 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-using System.ComponentModel;
-using System.ComponentModel.Design;
 
 namespace TicTacToe
 {
     public partial class Fline : UserControl
     {
+        public bool Inverted = false;
+        public int LineWidth = 4;
         public Fline()
         {
             InitializeComponent();
         }
 
-        private void UserControl1_Resize(object sender, EventArgs e)
+        private void Fline_Resize(object sender, EventArgs e)
         {
-            var wfactor = 4;
+            Point[] pts;
+            if (Inverted)
+                pts = new Point[6]{
+                    new Point(Width, 0),
+                    new Point(Width, LineWidth),
+                    new Point(LineWidth, Height),
+                    new Point(0, Height),
+                    new Point(0, Height-LineWidth),
+                    new Point(Width-LineWidth, 0),
+                };
+            else
+                pts = new Point[6]{
+                    new Point(0, 0),
+                    new Point(LineWidth, 0),
+                    new Point(Width, Height - LineWidth),
+                    new Point(Width, Height) ,
+                    new Point(Width - LineWidth, Height),
+                    new Point(0, LineWidth)
+               };
 
-            Point[] pts = {
-                new Point(0, 0),
-                new Point(wfactor, 0),
-                new Point(Width, Height - wfactor),
-                new Point(Width, Height) ,
-                new Point(Width - wfactor, Height),
-                new Point(0, wfactor)
-            };
 
             var types = new byte[]{
                 (byte)PathPointType.Start,
