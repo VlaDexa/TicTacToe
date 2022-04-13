@@ -139,9 +139,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
+            //
             // a1
-            // 
+            //
             this.a1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a1.Location = new System.Drawing.Point(9, 53);
             this.a1.Name = "a1";
@@ -149,9 +149,10 @@
             this.a1.TabIndex = 0;
             this.a1.UseVisualStyleBackColor = true;
             this.a1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a2
-            // 
+            //
             this.a2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a2.Location = new System.Drawing.Point(94, 53);
             this.a2.Name = "a2";
@@ -159,9 +160,10 @@
             this.a2.TabIndex = 1;
             this.a2.UseVisualStyleBackColor = true;
             this.a2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a4
-            // 
+            //
             this.a4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a4.Location = new System.Drawing.Point(264, 53);
             this.a4.Name = "a4";
@@ -169,9 +171,10 @@
             this.a4.TabIndex = 3;
             this.a4.UseVisualStyleBackColor = true;
             this.a4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a3
-            // 
+            //
             this.a3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a3.Location = new System.Drawing.Point(179, 53);
             this.a3.Name = "a3";
@@ -179,9 +182,10 @@
             this.a3.TabIndex = 2;
             this.a3.UseVisualStyleBackColor = true;
             this.a3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a6
-            // 
+            //
             this.a6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a6.Location = new System.Drawing.Point(434, 53);
             this.a6.Name = "a6";
@@ -189,9 +193,10 @@
             this.a6.TabIndex = 5;
             this.a6.UseVisualStyleBackColor = true;
             this.a6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a5
-            // 
+            //
             this.a5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a5.Location = new System.Drawing.Point(349, 53);
             this.a5.Name = "a5";
@@ -199,9 +204,10 @@
             this.a5.TabIndex = 4;
             this.a5.UseVisualStyleBackColor = true;
             this.a5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a8
-            // 
+            //
             this.a8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a8.Location = new System.Drawing.Point(604, 53);
             this.a8.Name = "a8";
@@ -209,9 +215,10 @@
             this.a8.TabIndex = 7;
             this.a8.UseVisualStyleBackColor = true;
             this.a8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a7
-            // 
+            //
             this.a7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a7.Location = new System.Drawing.Point(519, 53);
             this.a7.Name = "a7";
@@ -219,9 +226,10 @@
             this.a7.TabIndex = 6;
             this.a7.UseVisualStyleBackColor = true;
             this.a7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a10
-            // 
+            //
             this.a10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a10.Location = new System.Drawing.Point(774, 53);
             this.a10.Name = "a10";
@@ -229,9 +237,10 @@
             this.a10.TabIndex = 9;
             this.a10.UseVisualStyleBackColor = true;
             this.a10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // a9
-            // 
+            //
             this.a9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.a9.Location = new System.Drawing.Point(690, 53);
             this.a9.Name = "a9";
@@ -239,9 +248,10 @@
             this.a9.TabIndex = 8;
             this.a9.UseVisualStyleBackColor = true;
             this.a9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.a9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b10
-            // 
+            //
             this.b10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b10.Location = new System.Drawing.Point(774, 139);
             this.b10.Name = "b10";
@@ -249,9 +259,10 @@
             this.b10.TabIndex = 19;
             this.b10.UseVisualStyleBackColor = true;
             this.b10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b9
-            // 
+            //
             this.b9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b9.Location = new System.Drawing.Point(690, 139);
             this.b9.Name = "b9";
@@ -259,9 +270,10 @@
             this.b9.TabIndex = 18;
             this.b9.UseVisualStyleBackColor = true;
             this.b9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b8
-            // 
+            //
             this.b8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b8.Location = new System.Drawing.Point(604, 139);
             this.b8.Name = "b8";
@@ -269,9 +281,10 @@
             this.b8.TabIndex = 17;
             this.b8.UseVisualStyleBackColor = true;
             this.b8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b7
-            // 
+            //
             this.b7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b7.Location = new System.Drawing.Point(519, 139);
             this.b7.Name = "b7";
@@ -279,9 +292,10 @@
             this.b7.TabIndex = 16;
             this.b7.UseVisualStyleBackColor = true;
             this.b7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b6
-            // 
+            //
             this.b6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b6.Location = new System.Drawing.Point(434, 139);
             this.b6.Name = "b6";
@@ -289,9 +303,10 @@
             this.b6.TabIndex = 15;
             this.b6.UseVisualStyleBackColor = true;
             this.b6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b5
-            // 
+            //
             this.b5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b5.Location = new System.Drawing.Point(349, 139);
             this.b5.Name = "b5";
@@ -299,9 +314,10 @@
             this.b5.TabIndex = 14;
             this.b5.UseVisualStyleBackColor = true;
             this.b5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b4
-            // 
+            //
             this.b4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b4.Location = new System.Drawing.Point(264, 139);
             this.b4.Name = "b4";
@@ -309,9 +325,10 @@
             this.b4.TabIndex = 13;
             this.b4.UseVisualStyleBackColor = true;
             this.b4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b3
-            // 
+            //
             this.b3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b3.Location = new System.Drawing.Point(179, 139);
             this.b3.Name = "b3";
@@ -319,9 +336,10 @@
             this.b3.TabIndex = 12;
             this.b3.UseVisualStyleBackColor = true;
             this.b3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b2
-            // 
+            //
             this.b2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b2.Location = new System.Drawing.Point(94, 139);
             this.b2.Name = "b2";
@@ -329,9 +347,10 @@
             this.b2.TabIndex = 11;
             this.b2.UseVisualStyleBackColor = true;
             this.b2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // b1
-            // 
+            //
             this.b1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.b1.Location = new System.Drawing.Point(9, 139);
             this.b1.Name = "b1";
@@ -339,9 +358,10 @@
             this.b1.TabIndex = 10;
             this.b1.UseVisualStyleBackColor = true;
             this.b1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.b1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c10
-            // 
+            //
             this.c10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c10.Location = new System.Drawing.Point(774, 224);
             this.c10.Name = "c10";
@@ -349,9 +369,10 @@
             this.c10.TabIndex = 29;
             this.c10.UseVisualStyleBackColor = true;
             this.c10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c9
-            // 
+            //
             this.c9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c9.Location = new System.Drawing.Point(690, 224);
             this.c9.Name = "c9";
@@ -359,9 +380,10 @@
             this.c9.TabIndex = 28;
             this.c9.UseVisualStyleBackColor = true;
             this.c9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c8
-            // 
+            //
             this.c8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c8.Location = new System.Drawing.Point(604, 224);
             this.c8.Name = "c8";
@@ -369,9 +391,10 @@
             this.c8.TabIndex = 27;
             this.c8.UseVisualStyleBackColor = true;
             this.c8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c7
-            // 
+            //
             this.c7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c7.Location = new System.Drawing.Point(519, 224);
             this.c7.Name = "c7";
@@ -379,9 +402,10 @@
             this.c7.TabIndex = 26;
             this.c7.UseVisualStyleBackColor = true;
             this.c7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c6
-            // 
+            //
             this.c6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c6.Location = new System.Drawing.Point(434, 224);
             this.c6.Name = "c6";
@@ -389,9 +413,10 @@
             this.c6.TabIndex = 25;
             this.c6.UseVisualStyleBackColor = true;
             this.c6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c5
-            // 
+            //
             this.c5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c5.Location = new System.Drawing.Point(349, 224);
             this.c5.Name = "c5";
@@ -399,9 +424,10 @@
             this.c5.TabIndex = 24;
             this.c5.UseVisualStyleBackColor = true;
             this.c5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c4
-            // 
+            //
             this.c4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c4.Location = new System.Drawing.Point(264, 224);
             this.c4.Name = "c4";
@@ -409,9 +435,10 @@
             this.c4.TabIndex = 23;
             this.c4.UseVisualStyleBackColor = true;
             this.c4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c3
-            // 
+            //
             this.c3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c3.Location = new System.Drawing.Point(179, 224);
             this.c3.Name = "c3";
@@ -419,9 +446,10 @@
             this.c3.TabIndex = 22;
             this.c3.UseVisualStyleBackColor = true;
             this.c3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c2
-            // 
+            //
             this.c2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c2.Location = new System.Drawing.Point(94, 224);
             this.c2.Name = "c2";
@@ -429,9 +457,10 @@
             this.c2.TabIndex = 21;
             this.c2.UseVisualStyleBackColor = true;
             this.c2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // c1
-            // 
+            //
             this.c1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.c1.Location = new System.Drawing.Point(9, 224);
             this.c1.Name = "c1";
@@ -439,9 +468,10 @@
             this.c1.TabIndex = 20;
             this.c1.UseVisualStyleBackColor = true;
             this.c1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.c1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d10
-            // 
+            //
             this.d10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d10.Location = new System.Drawing.Point(774, 308);
             this.d10.Name = "d10";
@@ -449,9 +479,10 @@
             this.d10.TabIndex = 39;
             this.d10.UseVisualStyleBackColor = true;
             this.d10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d9
-            // 
+            //
             this.d9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d9.Location = new System.Drawing.Point(690, 308);
             this.d9.Name = "d9";
@@ -459,9 +490,10 @@
             this.d9.TabIndex = 38;
             this.d9.UseVisualStyleBackColor = true;
             this.d9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d8
-            // 
+            //
             this.d8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d8.Location = new System.Drawing.Point(604, 308);
             this.d8.Name = "d8";
@@ -469,9 +501,10 @@
             this.d8.TabIndex = 37;
             this.d8.UseVisualStyleBackColor = true;
             this.d8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d7
-            // 
+            //
             this.d7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d7.Location = new System.Drawing.Point(519, 308);
             this.d7.Name = "d7";
@@ -479,9 +512,10 @@
             this.d7.TabIndex = 36;
             this.d7.UseVisualStyleBackColor = true;
             this.d7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d6
-            // 
+            //
             this.d6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d6.Location = new System.Drawing.Point(434, 308);
             this.d6.Name = "d6";
@@ -489,9 +523,10 @@
             this.d6.TabIndex = 35;
             this.d6.UseVisualStyleBackColor = true;
             this.d6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d5
-            // 
+            //
             this.d5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d5.Location = new System.Drawing.Point(349, 308);
             this.d5.Name = "d5";
@@ -499,9 +534,10 @@
             this.d5.TabIndex = 34;
             this.d5.UseVisualStyleBackColor = true;
             this.d5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d4
-            // 
+            //
             this.d4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d4.Location = new System.Drawing.Point(264, 308);
             this.d4.Name = "d4";
@@ -509,9 +545,10 @@
             this.d4.TabIndex = 33;
             this.d4.UseVisualStyleBackColor = true;
             this.d4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d3
-            // 
+            //
             this.d3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d3.Location = new System.Drawing.Point(179, 308);
             this.d3.Name = "d3";
@@ -519,9 +556,10 @@
             this.d3.TabIndex = 32;
             this.d3.UseVisualStyleBackColor = true;
             this.d3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d2
-            // 
+            //
             this.d2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d2.Location = new System.Drawing.Point(94, 308);
             this.d2.Name = "d2";
@@ -529,9 +567,10 @@
             this.d2.TabIndex = 31;
             this.d2.UseVisualStyleBackColor = true;
             this.d2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // d1
-            // 
+            //
             this.d1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.d1.Location = new System.Drawing.Point(9, 308);
             this.d1.Name = "d1";
@@ -539,9 +578,10 @@
             this.d1.TabIndex = 30;
             this.d1.UseVisualStyleBackColor = true;
             this.d1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.d1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e10
-            // 
+            //
             this.e10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e10.Location = new System.Drawing.Point(774, 394);
             this.e10.Name = "e10";
@@ -549,9 +589,10 @@
             this.e10.TabIndex = 49;
             this.e10.UseVisualStyleBackColor = true;
             this.e10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e9
-            // 
+            //
             this.e9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e9.Location = new System.Drawing.Point(690, 394);
             this.e9.Name = "e9";
@@ -559,9 +600,10 @@
             this.e9.TabIndex = 48;
             this.e9.UseVisualStyleBackColor = true;
             this.e9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e8
-            // 
+            //
             this.e8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e8.Location = new System.Drawing.Point(604, 394);
             this.e8.Name = "e8";
@@ -569,9 +611,10 @@
             this.e8.TabIndex = 47;
             this.e8.UseVisualStyleBackColor = true;
             this.e8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e7
-            // 
+            //
             this.e7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e7.Location = new System.Drawing.Point(519, 394);
             this.e7.Name = "e7";
@@ -579,9 +622,10 @@
             this.e7.TabIndex = 46;
             this.e7.UseVisualStyleBackColor = true;
             this.e7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e6
-            // 
+            //
             this.e6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e6.Location = new System.Drawing.Point(434, 394);
             this.e6.Name = "e6";
@@ -589,9 +633,10 @@
             this.e6.TabIndex = 45;
             this.e6.UseVisualStyleBackColor = true;
             this.e6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e5
-            // 
+            //
             this.e5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e5.Location = new System.Drawing.Point(349, 394);
             this.e5.Name = "e5";
@@ -599,9 +644,10 @@
             this.e5.TabIndex = 44;
             this.e5.UseVisualStyleBackColor = true;
             this.e5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e4
-            // 
+            //
             this.e4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e4.Location = new System.Drawing.Point(264, 394);
             this.e4.Name = "e4";
@@ -609,9 +655,10 @@
             this.e4.TabIndex = 43;
             this.e4.UseVisualStyleBackColor = true;
             this.e4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e3
-            // 
+            //
             this.e3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e3.Location = new System.Drawing.Point(179, 394);
             this.e3.Name = "e3";
@@ -619,9 +666,10 @@
             this.e3.TabIndex = 42;
             this.e3.UseVisualStyleBackColor = true;
             this.e3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e2
-            // 
+            //
             this.e2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e2.Location = new System.Drawing.Point(94, 394);
             this.e2.Name = "e2";
@@ -629,9 +677,10 @@
             this.e2.TabIndex = 41;
             this.e2.UseVisualStyleBackColor = true;
             this.e2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // e1
-            // 
+            //
             this.e1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.e1.Location = new System.Drawing.Point(9, 394);
             this.e1.Name = "e1";
@@ -639,9 +688,10 @@
             this.e1.TabIndex = 40;
             this.e1.UseVisualStyleBackColor = true;
             this.e1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.e1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f10
-            // 
+            //
             this.f10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f10.Location = new System.Drawing.Point(774, 479);
             this.f10.Name = "f10";
@@ -649,9 +699,10 @@
             this.f10.TabIndex = 59;
             this.f10.UseVisualStyleBackColor = true;
             this.f10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f9
-            // 
+            //
             this.f9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f9.Location = new System.Drawing.Point(690, 479);
             this.f9.Name = "f9";
@@ -659,9 +710,10 @@
             this.f9.TabIndex = 58;
             this.f9.UseVisualStyleBackColor = true;
             this.f9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f8
-            // 
+            //
             this.f8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f8.Location = new System.Drawing.Point(604, 479);
             this.f8.Name = "f8";
@@ -669,9 +721,10 @@
             this.f8.TabIndex = 57;
             this.f8.UseVisualStyleBackColor = true;
             this.f8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f7
-            // 
+            //
             this.f7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f7.Location = new System.Drawing.Point(519, 479);
             this.f7.Name = "f7";
@@ -679,9 +732,10 @@
             this.f7.TabIndex = 56;
             this.f7.UseVisualStyleBackColor = true;
             this.f7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f6
-            // 
+            //
             this.f6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f6.Location = new System.Drawing.Point(434, 479);
             this.f6.Name = "f6";
@@ -689,9 +743,10 @@
             this.f6.TabIndex = 55;
             this.f6.UseVisualStyleBackColor = true;
             this.f6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f5
-            // 
+            //
             this.f5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f5.Location = new System.Drawing.Point(349, 479);
             this.f5.Name = "f5";
@@ -699,9 +754,10 @@
             this.f5.TabIndex = 54;
             this.f5.UseVisualStyleBackColor = true;
             this.f5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f4
-            // 
+            //
             this.f4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f4.Location = new System.Drawing.Point(264, 479);
             this.f4.Name = "f4";
@@ -709,9 +765,10 @@
             this.f4.TabIndex = 53;
             this.f4.UseVisualStyleBackColor = true;
             this.f4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f3
-            // 
+            //
             this.f3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f3.Location = new System.Drawing.Point(179, 479);
             this.f3.Name = "f3";
@@ -719,9 +776,10 @@
             this.f3.TabIndex = 52;
             this.f3.UseVisualStyleBackColor = true;
             this.f3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f2
-            // 
+            //
             this.f2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f2.Location = new System.Drawing.Point(94, 479);
             this.f2.Name = "f2";
@@ -729,9 +787,10 @@
             this.f2.TabIndex = 51;
             this.f2.UseVisualStyleBackColor = true;
             this.f2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // f1
-            // 
+            //
             this.f1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.f1.Location = new System.Drawing.Point(9, 479);
             this.f1.Name = "f1";
@@ -739,9 +798,10 @@
             this.f1.TabIndex = 50;
             this.f1.UseVisualStyleBackColor = true;
             this.f1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.f1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g10
-            // 
+            //
             this.g10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g10.Location = new System.Drawing.Point(774, 563);
             this.g10.Name = "g10";
@@ -749,9 +809,10 @@
             this.g10.TabIndex = 69;
             this.g10.UseVisualStyleBackColor = true;
             this.g10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g9
-            // 
+            //
             this.g9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g9.Location = new System.Drawing.Point(690, 563);
             this.g9.Name = "g9";
@@ -759,9 +820,10 @@
             this.g9.TabIndex = 68;
             this.g9.UseVisualStyleBackColor = true;
             this.g9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g8
-            // 
+            //
             this.g8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g8.Location = new System.Drawing.Point(604, 563);
             this.g8.Name = "g8";
@@ -769,9 +831,10 @@
             this.g8.TabIndex = 67;
             this.g8.UseVisualStyleBackColor = true;
             this.g8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g7
-            // 
+            //
             this.g7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g7.Location = new System.Drawing.Point(519, 563);
             this.g7.Name = "g7";
@@ -779,9 +842,10 @@
             this.g7.TabIndex = 66;
             this.g7.UseVisualStyleBackColor = true;
             this.g7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g6
-            // 
+            //
             this.g6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g6.Location = new System.Drawing.Point(434, 563);
             this.g6.Name = "g6";
@@ -789,9 +853,10 @@
             this.g6.TabIndex = 65;
             this.g6.UseVisualStyleBackColor = true;
             this.g6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g5
-            // 
+            //
             this.g5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g5.Location = new System.Drawing.Point(349, 563);
             this.g5.Name = "g5";
@@ -799,9 +864,10 @@
             this.g5.TabIndex = 64;
             this.g5.UseVisualStyleBackColor = true;
             this.g5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g4
-            // 
+            //
             this.g4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g4.Location = new System.Drawing.Point(264, 563);
             this.g4.Name = "g4";
@@ -809,9 +875,10 @@
             this.g4.TabIndex = 63;
             this.g4.UseVisualStyleBackColor = true;
             this.g4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g3
-            // 
+            //
             this.g3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g3.Location = new System.Drawing.Point(179, 563);
             this.g3.Name = "g3";
@@ -819,9 +886,10 @@
             this.g3.TabIndex = 62;
             this.g3.UseVisualStyleBackColor = true;
             this.g3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g2
-            // 
+            //
             this.g2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g2.Location = new System.Drawing.Point(94, 563);
             this.g2.Name = "g2";
@@ -829,9 +897,10 @@
             this.g2.TabIndex = 61;
             this.g2.UseVisualStyleBackColor = true;
             this.g2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // g1
-            // 
+            //
             this.g1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.g1.Location = new System.Drawing.Point(9, 563);
             this.g1.Name = "g1";
@@ -839,9 +908,10 @@
             this.g1.TabIndex = 60;
             this.g1.UseVisualStyleBackColor = true;
             this.g1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.g1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j10
-            // 
+            //
             this.j10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j10.Location = new System.Drawing.Point(774, 818);
             this.j10.Name = "j10";
@@ -849,9 +919,10 @@
             this.j10.TabIndex = 99;
             this.j10.UseVisualStyleBackColor = true;
             this.j10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j9
-            // 
+            //
             this.j9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j9.Location = new System.Drawing.Point(690, 818);
             this.j9.Name = "j9";
@@ -859,9 +930,10 @@
             this.j9.TabIndex = 98;
             this.j9.UseVisualStyleBackColor = true;
             this.j9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j8
-            // 
+            //
             this.j8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j8.Location = new System.Drawing.Point(604, 818);
             this.j8.Name = "j8";
@@ -869,9 +941,10 @@
             this.j8.TabIndex = 97;
             this.j8.UseVisualStyleBackColor = true;
             this.j8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j7
-            // 
+            //
             this.j7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j7.Location = new System.Drawing.Point(519, 818);
             this.j7.Name = "j7";
@@ -879,9 +952,10 @@
             this.j7.TabIndex = 96;
             this.j7.UseVisualStyleBackColor = true;
             this.j7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j6
-            // 
+            //
             this.j6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j6.Location = new System.Drawing.Point(434, 818);
             this.j6.Name = "j6";
@@ -889,9 +963,10 @@
             this.j6.TabIndex = 95;
             this.j6.UseVisualStyleBackColor = true;
             this.j6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j5
-            // 
+            //
             this.j5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j5.Location = new System.Drawing.Point(349, 818);
             this.j5.Name = "j5";
@@ -899,9 +974,10 @@
             this.j5.TabIndex = 94;
             this.j5.UseVisualStyleBackColor = true;
             this.j5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j4
-            // 
+            //
             this.j4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j4.Location = new System.Drawing.Point(264, 818);
             this.j4.Name = "j4";
@@ -909,9 +985,10 @@
             this.j4.TabIndex = 93;
             this.j4.UseVisualStyleBackColor = true;
             this.j4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j3
-            // 
+            //
             this.j3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j3.Location = new System.Drawing.Point(179, 818);
             this.j3.Name = "j3";
@@ -919,9 +996,10 @@
             this.j3.TabIndex = 92;
             this.j3.UseVisualStyleBackColor = true;
             this.j3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j2
-            // 
+            //
             this.j2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j2.Location = new System.Drawing.Point(94, 818);
             this.j2.Name = "j2";
@@ -929,9 +1007,10 @@
             this.j2.TabIndex = 91;
             this.j2.UseVisualStyleBackColor = true;
             this.j2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // j1
-            // 
+            //
             this.j1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.j1.Location = new System.Drawing.Point(9, 818);
             this.j1.Name = "j1";
@@ -939,9 +1018,10 @@
             this.j1.TabIndex = 90;
             this.j1.UseVisualStyleBackColor = true;
             this.j1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.j1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i10
-            // 
+            //
             this.i10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i10.Location = new System.Drawing.Point(774, 734);
             this.i10.Name = "i10";
@@ -949,9 +1029,10 @@
             this.i10.TabIndex = 89;
             this.i10.UseVisualStyleBackColor = true;
             this.i10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i9
-            // 
+            //
             this.i9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i9.Location = new System.Drawing.Point(690, 734);
             this.i9.Name = "i9";
@@ -959,9 +1040,10 @@
             this.i9.TabIndex = 88;
             this.i9.UseVisualStyleBackColor = true;
             this.i9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i8
-            // 
+            //
             this.i8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i8.Location = new System.Drawing.Point(604, 734);
             this.i8.Name = "i8";
@@ -969,9 +1051,10 @@
             this.i8.TabIndex = 87;
             this.i8.UseVisualStyleBackColor = true;
             this.i8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i7
-            // 
+            //
             this.i7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i7.Location = new System.Drawing.Point(519, 734);
             this.i7.Name = "i7";
@@ -979,9 +1062,10 @@
             this.i7.TabIndex = 86;
             this.i7.UseVisualStyleBackColor = true;
             this.i7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i6
-            // 
+            //
             this.i6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i6.Location = new System.Drawing.Point(434, 734);
             this.i6.Name = "i6";
@@ -989,9 +1073,10 @@
             this.i6.TabIndex = 85;
             this.i6.UseVisualStyleBackColor = true;
             this.i6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i5
-            // 
+            //
             this.i5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i5.Location = new System.Drawing.Point(349, 734);
             this.i5.Name = "i5";
@@ -999,9 +1084,10 @@
             this.i5.TabIndex = 84;
             this.i5.UseVisualStyleBackColor = true;
             this.i5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i4
-            // 
+            //
             this.i4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i4.Location = new System.Drawing.Point(264, 734);
             this.i4.Name = "i4";
@@ -1009,9 +1095,10 @@
             this.i4.TabIndex = 83;
             this.i4.UseVisualStyleBackColor = true;
             this.i4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i3
-            // 
+            //
             this.i3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i3.Location = new System.Drawing.Point(179, 734);
             this.i3.Name = "i3";
@@ -1019,9 +1106,10 @@
             this.i3.TabIndex = 82;
             this.i3.UseVisualStyleBackColor = true;
             this.i3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i2
-            // 
+            //
             this.i2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i2.Location = new System.Drawing.Point(94, 734);
             this.i2.Name = "i2";
@@ -1029,9 +1117,10 @@
             this.i2.TabIndex = 81;
             this.i2.UseVisualStyleBackColor = true;
             this.i2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // i1
-            // 
+            //
             this.i1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.i1.Location = new System.Drawing.Point(9, 734);
             this.i1.Name = "i1";
@@ -1039,9 +1128,10 @@
             this.i1.TabIndex = 80;
             this.i1.UseVisualStyleBackColor = true;
             this.i1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.i1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h10
-            // 
+            //
             this.h10.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h10.Location = new System.Drawing.Point(774, 649);
             this.h10.Name = "h10";
@@ -1049,9 +1139,10 @@
             this.h10.TabIndex = 79;
             this.h10.UseVisualStyleBackColor = true;
             this.h10.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h9
-            // 
+            //
             this.h9.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h9.Location = new System.Drawing.Point(690, 649);
             this.h9.Name = "h9";
@@ -1059,9 +1150,10 @@
             this.h9.TabIndex = 78;
             this.h9.UseVisualStyleBackColor = true;
             this.h9.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h8
-            // 
+            //
             this.h8.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h8.Location = new System.Drawing.Point(604, 649);
             this.h8.Name = "h8";
@@ -1069,9 +1161,10 @@
             this.h8.TabIndex = 77;
             this.h8.UseVisualStyleBackColor = true;
             this.h8.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h7
-            // 
+            //
             this.h7.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h7.Location = new System.Drawing.Point(519, 649);
             this.h7.Name = "h7";
@@ -1079,9 +1172,10 @@
             this.h7.TabIndex = 76;
             this.h7.UseVisualStyleBackColor = true;
             this.h7.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h6
-            // 
+            //
             this.h6.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h6.Location = new System.Drawing.Point(434, 649);
             this.h6.Name = "h6";
@@ -1089,9 +1183,10 @@
             this.h6.TabIndex = 75;
             this.h6.UseVisualStyleBackColor = true;
             this.h6.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h5
-            // 
+            //
             this.h5.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h5.Location = new System.Drawing.Point(349, 649);
             this.h5.Name = "h5";
@@ -1099,9 +1194,10 @@
             this.h5.TabIndex = 74;
             this.h5.UseVisualStyleBackColor = true;
             this.h5.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h4
-            // 
+            //
             this.h4.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h4.Location = new System.Drawing.Point(264, 649);
             this.h4.Name = "h4";
@@ -1109,9 +1205,10 @@
             this.h4.TabIndex = 73;
             this.h4.UseVisualStyleBackColor = true;
             this.h4.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h3
-            // 
+            //
             this.h3.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h3.Location = new System.Drawing.Point(179, 649);
             this.h3.Name = "h3";
@@ -1119,9 +1216,10 @@
             this.h3.TabIndex = 72;
             this.h3.UseVisualStyleBackColor = true;
             this.h3.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h2
-            // 
+            //
             this.h2.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h2.Location = new System.Drawing.Point(94, 649);
             this.h2.Name = "h2";
@@ -1129,9 +1227,10 @@
             this.h2.TabIndex = 71;
             this.h2.UseVisualStyleBackColor = true;
             this.h2.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // h1
-            // 
+            //
             this.h1.Font = new System.Drawing.Font("Segoe UI", 45F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.h1.Location = new System.Drawing.Point(9, 649);
             this.h1.Name = "h1";
@@ -1139,55 +1238,56 @@
             this.h1.TabIndex = 70;
             this.h1.UseVisualStyleBackColor = true;
             this.h1.Click += new System.EventHandler(this.ProcessButtonClick);
-            // 
+            this.h1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //
             // label1
-            // 
+            //
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(26, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 100;
             this.label1.Text = "Первый";
-            // 
+            //
             // label2
-            // 
+            //
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(798, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 15);
             this.label2.TabIndex = 101;
             this.label2.Text = "Второй";
-            // 
+            //
             // First
-            // 
+            //
             this.First.AutoSize = true;
             this.First.Location = new System.Drawing.Point(26, 24);
             this.First.Name = "First";
             this.First.Size = new System.Drawing.Size(13, 15);
             this.First.TabIndex = 102;
             this.First.Text = "0";
-            // 
+            //
             // Second
-            // 
+            //
             this.Second.AutoSize = true;
             this.Second.Location = new System.Drawing.Point(798, 24);
             this.Second.Name = "Second";
             this.Second.Size = new System.Drawing.Size(13, 15);
             this.Second.TabIndex = 103;
             this.Second.Text = "0";
-            // 
+            //
             // FileLoader
-            // 
+            //
             this.FileLoader.DefaultExt = "tttlab";
             this.FileLoader.FileName = "FileSaver";
             this.FileLoader.FileOk += new System.ComponentModel.CancelEventHandler(this.FileLoader_FileOk);
-            // 
+            //
             // FileSaver
-            // 
+            //
             this.FileSaver.FileOk += new System.ComponentModel.CancelEventHandler(this.FileSaver_FileOk);
-            // 
+            //
             // SaveButton
-            // 
+            //
             this.SaveButton.Location = new System.Drawing.Point(397, 16);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
@@ -1195,9 +1295,9 @@
             this.SaveButton.Text = "Сохранить игру";
             this.SaveButton.UseVisualStyleBackColor = true;
             this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
+            //
             // button1
-            // 
+            //
             this.button1.Location = new System.Drawing.Point(21, 915);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 23);
@@ -1205,9 +1305,9 @@
             this.button1.Text = "Новая игра";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.NewGame_Click);
-            // 
+            //
             // button2
-            // 
+            //
             this.button2.Location = new System.Drawing.Point(392, 915);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -1215,9 +1315,9 @@
             this.button2.Text = "Загрузить";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Load_Click);
-            // 
+            //
             // button3
-            // 
+            //
             this.button3.Location = new System.Drawing.Point(742, 915);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(98, 23);
@@ -1225,9 +1325,9 @@
             this.button3.Text = "Сбросить счёт";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.ResetButton_Click);
-            // 
+            //
             // TenByTen
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 950);
