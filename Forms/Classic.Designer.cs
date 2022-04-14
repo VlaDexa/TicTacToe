@@ -233,6 +233,7 @@
             // FileSaver
             //
             this.FileSaver.DefaultExt = "tttlab";
+            this.FileSaver.Filter = "Файлы игры|*.tttlab";
             this.FileSaver.FileOk += new System.ComponentModel.CancelEventHandler(this.FileSaver_FileOk);
             //
             // Load
@@ -249,7 +250,7 @@
             // FileLoader
             //
             this.FileLoader.DefaultExt = "tttlab";
-            this.FileLoader.FileName = "openFileDialog1";
+            this.FileLoader.Filter = "Файлы игры|*.tttlab";
             this.FileLoader.FileOk += new System.ComponentModel.CancelEventHandler(this.FileLoader_FileOk);
             //
             // Classic
