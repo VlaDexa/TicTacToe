@@ -124,11 +124,13 @@ namespace TicTacToe
             {
                 Reset();
                 var filename = AbstractFileLoader.FileName;
-                using StreamReader inputFile = new(filename);
-                AbstractFirst.Text = inputFile.ReadLine().Unwrap();
-                AbstractSecond.Text = inputFile.ReadLine().Unwrap();
-                GameField = new GameField(inputFile, AbstractField, AbstractFieldSize);
-                CurrentTurn = GameField.TurnCount;
+                using (StreamReader inputFile = new(filename))
+                {
+                    AbstractFirst.Text = inputFile.ReadLine().Unwrap();
+                    AbstractSecond.Text = inputFile.ReadLine().Unwrap();
+                    GameField = new GameField(inputFile, AbstractField, AbstractFieldSize);
+                    CurrentTurn = GameField.TurnCount;
+                };
                 return;
             }
             catch (ParseException)
@@ -148,7 +150,6 @@ namespace TicTacToe
             e.Cancel = true;
         }
     }
-
 
     internal static partial class Extensions
     {
