@@ -84,7 +84,6 @@ namespace TicTacToe
                 }
             CurrentTurn = 0;
             if (GameField is not null) GameField.Reset();
-            Invalidate();
         }
 
         protected void NewGame_Click(object sender, EventArgs e)
@@ -156,7 +155,7 @@ namespace TicTacToe
         public static T Unwrap<T>(this T? value)
         {
             if (value is null) throw new NullReferenceException(nameof(value));
-            return value!;
+            return value;
         }
     }
 }
