@@ -120,13 +120,42 @@ namespace TicTacToe
 
         protected void FileLoader_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            try
+            {
+                Reset();
+                var filename = AbstractFileLoader.FileName;
+                using StreamReader inputFile = new(filename);
+                AbstractFirst.Text = inputFile.ReadLine().Unwrap();
+                AbstractSecond.Text = inputFile.ReadLine().Unwrap();
+                GameField = new GameField(inputFile, AbstractField, AbstractFieldSize);
+                CurrentTurn = GameField.TurnCount;
+                return;
+            }
+            catch (ParseException)
+            {
+                MessageBox.Show("Сохранение сделано в поле другого размера");
+            }
+            catch (NullReferenceException)
+            {
+                MessageBox.Show("Неверный формат файла");
+            }
+            catch (IOException)
+            {
+                MessageBox.Show("Ошибка при чтении файла");
+            }
+            AbstractSecond.Text = AbstractFirst.Text = "0";
             Reset();
-            var filename = AbstractFileLoader.FileName;
-            using StreamReader inputFile = new(filename);
-            AbstractFirst.Text = inputFile.ReadLine()!;
-            AbstractSecond.Text = inputFile.ReadLine()!;
-            GameField = new GameField(inputFile, AbstractField);
-            CurrentTurn = GameField.TurnCount;
+            e.Cancel = true;
+        }
+    }
+
+
+    internal static partial class Extensions
+    {
+        public static T Unwrap<T>(this T? value)
+        {
+            if (value is null) throw new NullReferenceException(nameof(value));
+            return value!;
         }
     }
 }

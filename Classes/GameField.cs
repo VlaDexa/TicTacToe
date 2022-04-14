@@ -118,14 +118,15 @@ namespace TicTacToe
             return stringBuild;
         }
 
-        public GameField(StreamReader file, Button[,] buttons)
+        public GameField(StreamReader file, Button[,] buttons, uint size)
         {
-            Size = uint.Parse(file.ReadLine()!);
+            if (uint.Parse(file.ReadLine().Unwrap()) != size) throw new ParseException("Wrong file format");
+            Size = size;
             Field = new CellState[Size, Size];
             var x = 0;
             uint y = 0;
-            uint size = 0;
-            foreach (var character in file.ReadLine()!)
+            uint turns = 0;
+            foreach (var character in file.ReadLine().Unwrap())
             {
                 CellState cell = character switch
                 {
@@ -137,7 +138,7 @@ namespace TicTacToe
                 {
                     buttons[x, y].Text = cell == CellState.Tic ? "X" : "O";
                     buttons[x, y].Enabled = false;
-                    ++size;
+                    ++turns;
                 }
                 Field[x, y] = cell;
                 ++y;
@@ -146,8 +147,14 @@ namespace TicTacToe
                     y %= Size;
                     ++x;
                 }
-                TurnCount = size;
+                TurnCount = turns;
             }
         }
+    }
+
+
+    internal class ParseException : System.Exception
+    {
+        public ParseException(string? message) : base(message) { }
     }
 }
