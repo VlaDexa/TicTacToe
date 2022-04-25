@@ -134,7 +134,7 @@ namespace TicTacToe
                     '2' => CellState.Tac,
                     _ => CellState.None,
                 };
-                if (cell is not CellState.None)
+                if (cell != CellState.None)
                 {
                     buttons[x, y].Text = cell == CellState.Tic ? "X" : "O";
                     buttons[x, y].Enabled = false;

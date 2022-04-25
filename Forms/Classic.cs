@@ -25,7 +25,11 @@ namespace TicTacToe
         public Classic()
         {
             InitializeComponent();
-            Field = new Button[FieldSize, FieldSize] { { a1, a2, a3 }, { b1, b2, b3 }, { c1, c2, c3 } };
+            Field = new Button[FieldSize, FieldSize] { 
+                { a1, a2, a3 }, 
+                { b1, b2, b3 }, 
+                { c1, c2, c3 } 
+            };
         }
     }
 }

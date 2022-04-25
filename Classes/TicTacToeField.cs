@@ -20,8 +20,8 @@ namespace TicTacToe
 
         protected void ProcessButtonClick(object sender, EventArgs e)
         {
-            GameField ??= new(AbstractFieldSize);
-            if (sender is not Button button) return;
+            GameField ??= new GameField(AbstractFieldSize);
+            if (sender is Button button) { }  else return;
             for (uint x = 0; x < AbstractFieldSize; ++x)
                 for (uint y = 0; y < AbstractFieldSize; ++y)
                     if (button == AbstractField[x, y])
@@ -83,7 +83,7 @@ namespace TicTacToe
                     break;
                 }
             CurrentTurn = 0;
-            if (GameField is not null) GameField.Reset();
+            if (GameField != null) GameField.Reset();
         }
 
         protected void NewGame_Click(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace TicTacToe
             var filename = AbstractFileSaver.FileName;
             var stringBuild = GameField.PrepareForFile();
             stringBuild.Insert(0, $"{AbstractFirst.Text}\n{AbstractSecond.Text}\n");
-            using StreamWriter outputFile = new(filename);
+            using StreamWriter outputFile = new StreamWriter(filename);
             outputFile.WriteLine(stringBuild);
         }
 
@@ -123,7 +123,7 @@ namespace TicTacToe
             {
                 Reset();
                 var filename = AbstractFileLoader.FileName;
-                using (StreamReader inputFile = new(filename))
+                using (StreamReader inputFile = new StreamReader(filename))
                 {
                     AbstractFirst.Text = inputFile.ReadLine().Unwrap();
                     AbstractSecond.Text = inputFile.ReadLine().Unwrap();
@@ -152,7 +152,7 @@ namespace TicTacToe
 
     internal static partial class Extensions
     {
-        public static T Unwrap<T>(this T? value)
+        public static T Unwrap<T>(this T? value) where T: class
         {
             if (value is null) throw new NullReferenceException(nameof(value));
             return value;
