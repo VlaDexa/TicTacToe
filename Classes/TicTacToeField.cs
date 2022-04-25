@@ -67,6 +67,16 @@ namespace TicTacToe
             ++CurrentTurn;
         }
 
+        private void AppendHistory()
+        {
+            if (!File.Exists("history.txt"))
+                File.Create("history.txt");
+            using StreamWriter sw = new StreamWriter("history.txt", true);
+            var text = GameField!.PrepareForFile();
+            text.AppendLine();
+            sw.WriteLine(text);
+        }
+
 
         private void Reset()
         {
