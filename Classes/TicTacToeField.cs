@@ -9,6 +9,8 @@ namespace TicTacToe
     {
         private uint CurrentTurn = 0;
         private GameField? GameField;
+        private readonly FileStream HistoryFile = File.Create("history.txt");
+        
         protected abstract uint AbstractCombo { get; }
         protected abstract uint AbstractFieldSize { get; }
         protected abstract Button[,] AbstractField { get; }
@@ -32,6 +34,7 @@ namespace TicTacToe
                 outloop:
             button.Text = CurrentTurn % 2 == 0 ? "X" : "O";
             button.Enabled = false;
+            AppendHistory();
             var (end, coordinates) = GameField.Check(AbstractCombo);
             if (end is GameEnd result)
             {
@@ -69,14 +72,15 @@ namespace TicTacToe
 
         private void AppendHistory()
         {
-            if (!File.Exists("history.txt"))
-                File.Create("history.txt");
-            using StreamWriter sw = new StreamWriter("history.txt", true);
+            var sw = new StreamWriter(HistoryFile);
             var text = GameField!.PrepareForFile();
+            text.Remove(0, 4);
+            text = text.Replace('1', 'X').Replace('2', 'O');
+            text.Insert(0, $"{CurrentTurn+1}: ");
             text.AppendLine();
             sw.WriteLine(text);
+            sw.Flush();
         }
-
 
         private void Reset()
         {
